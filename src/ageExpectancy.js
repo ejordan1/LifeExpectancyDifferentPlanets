@@ -1,6 +1,7 @@
 export class AgePlanets{
-  constructor(date){
+  constructor(date, lifeExpectancy){
     this.date = date;
+    this.lifeExpectancy = lifeExpectancy;
   }
 
   getExactYearsAlive(){
@@ -8,9 +9,11 @@ export class AgePlanets{
   }
   //conversion is earth to other planet
   getYearsOnPlanet(conversion){
-    return parseInt(this.getExactYearsAlive() / conversion);
+    return Math.floor(this.getExactYearsAlive() / conversion);
   }
 
-
-
+  getYearsLeftOnPlanet(conversion){
+    let exactYearsExpectedEarth = Math.floor(this.lifeExpectancy - this.getExactYearsAlive());
+    return exactYearsExpectedEarth * conversion;
+  }
 }

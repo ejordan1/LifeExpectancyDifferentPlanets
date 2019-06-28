@@ -5,7 +5,7 @@ let userDOB1 = new Date (1996, 4, 2);
 let planetYears = [.24, .62, 1, 1.88, 11.86];
 
 let myDate = new Date(1996, 4, 2);
-let myAgePlanets = new AgePlanets(myDate);
+let myAgePlanets = new AgePlanets(myDate, 80);
 
 console.log(myAgePlanets.getExactYearsAlive());
 console.log(myAgePlanets.getYearsOnPlanet(getPlanetsYears()[0]));
@@ -18,6 +18,8 @@ console.log(myAgePlanets.getYearsOnPlanet(getPlanetsYears()[0]));
 // console.log (parseInt(23.155244475161503 / .62));
 // console.log (parseInt(23.155244475161503 / 1.88));
 // console.log (parseInt(23.155244475161503 / 11.86));
+debugger;
+console.log(myAgePlanets.getYearsLeftOnPlanet(1));
 
 export function getPlanetsYears(){
   return planetYears;

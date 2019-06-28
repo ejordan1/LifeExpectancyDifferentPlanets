@@ -11,8 +11,7 @@
 // });
 
 let myDate = new Date(1996, 4, 2);
-let myAgePlanets = new AgePlanets(myDate);
-
+let myAgePlanets = new AgePlanets(myDate, 80);
 
 import {AgePlanets} from './../src/ageExpectancy';
 import {getPlanetsYears} from './../src/main';
@@ -35,4 +34,9 @@ describe ('Age for planets', function(){
   it ('will return years alive jupiter', function(){
     expect(myAgePlanets.getYearsOnPlanet(getPlanetsYears()[4])).toEqual(1);
   });
+
+  it ('will return earth years left', function(){
+    expect(myAgePlanets.getYearsLeftOnPlanet(getPlanetsYears()[2])).toEqual(56);
+  });
+
 });
