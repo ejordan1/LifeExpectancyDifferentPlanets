@@ -15,9 +15,11 @@ export class AgePlanets{
 
   //if years left is negative they have surpassed the expectancy
   getYearsLeftOnPlanet(conversion){
-
-    debugger;
     let exactYearsExpectedEarth = this.lifeExpectancy - this.getExactYearsAlive();
     return Math.floor(exactYearsExpectedEarth / conversion);
+  }
+
+  toString(){
+    return this.date.toString() + ", " + this.lifeExpectancy;
   }
 }

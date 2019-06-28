@@ -49,6 +49,4 @@ describe ('Age for planets', function(){
   it ('will return earth years left for 1996 mars person', function(){
     expect(myAgePlanets.getYearsLeftOnPlanet(getPlanetsYears()[3])).toEqual(30);
   });
-
-
 });
