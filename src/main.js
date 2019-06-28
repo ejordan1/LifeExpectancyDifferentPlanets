@@ -59,7 +59,7 @@ function clicked(event){
   console.log((x - window.innerWidth / 2));
 
   for(let i = 0; i < planetDimensions.length; i++){
-    if (((x - window.innerWidth / 2) - planetDimensions[i][0]) < planetDimensions[i][1]){
+    if (Math.abs((x - window.innerWidth / 2) - (planetDimensions[i][0] - (imageWidth / 2))) < planetDimensions[i][1]){
       console.log(i);
     }
   }
