@@ -9,3 +9,30 @@
 //
 //
 // });
+
+let myDate = new Date(1996, 4, 2);
+let myAgePlanets = new AgePlanets(myDate);
+
+
+import {AgePlanets} from './../src/ageExpectancy';
+import {getPlanetsYears} from './../src/main';
+
+describe ('Age for planets', function(){
+
+  it ('will return years alive mercury', function(){
+    // console.log(myAgePlanets.getYearsOnPlanet(getPlanetsYears()[0]));
+    expect(myAgePlanets.getYearsOnPlanet(getPlanetsYears()[0])).toEqual(96);
+  });
+  it ('will return years alive venus', function(){
+    expect(myAgePlanets.getYearsOnPlanet(getPlanetsYears()[1])).toEqual(37);
+  });
+  it ('will return years alive earth', function(){
+    expect(myAgePlanets.getYearsOnPlanet(getPlanetsYears()[2])).toEqual(23);
+  });
+  it ('will return years alive mars', function(){
+    expect(myAgePlanets.getYearsOnPlanet(getPlanetsYears()[3])).toEqual(12);
+  });
+  it ('will return years alive jupiter', function(){
+    expect(myAgePlanets.getYearsOnPlanet(getPlanetsYears()[4])).toEqual(1);
+  });
+});
