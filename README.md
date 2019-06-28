@@ -11,12 +11,13 @@
 ### Specs
 | Spec | Input | Output |
 | -------------     | ------------- | ------------- |
-| **Converts date of birth to number of days lived** | august 15, 1950 | 25154 |
-|**Converts days lived to Mercury years** | 180 | 2 |
-|**Converts days lived to Venus years** | 810 | 3 |
-|**Converts days lived to Mars years** | 4129 | 6 |
-|**Converts days lived to Jupiter years** | 50032 | 11 |
-|**Gives years Left user has left on each planet, or years past life expectancy if already passed** | Birth date | days left on: mercury, Venus, Mars, Jupiter |
+| **Converts date of birth to exact number of years lived** | May 2, 1996 | 23.15584339 |
+|**Gets years lived on Mercury with conversion** | .24 | 96 |
+|**Converts years lived to Venus years** | .62 | 37 |
+|**Converts years lived to Mars years** | 1.88 | 12 |
+|**Converts years lived to Jupiter years** | 11.86 | 1 |
+|**Gives years Left user has left on each planet, or years past life expectancy if already passed** | Birth May 2, 1996, conversion: 1.88 | 30 |
+|**Gives years Left user has left on each planet, or years past life expectancy if already passed** | Birth May 2, 1936, conversion: 1.88 | -2 |
 
 
 ## Setup/Installation Requirements

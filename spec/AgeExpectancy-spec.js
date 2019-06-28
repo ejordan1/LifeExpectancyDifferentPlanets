@@ -35,8 +35,20 @@ describe ('Age for planets', function(){
     expect(myAgePlanets.getYearsOnPlanet(getPlanetsYears()[4])).toEqual(1);
   });
 
-  it ('will return earth years left', function(){
+  it ('will return earth years left for 1996 person', function(){
     expect(myAgePlanets.getYearsLeftOnPlanet(getPlanetsYears()[2])).toEqual(56);
   });
+
+  let myDate2 = new Date(1936, 4, 2);
+  let myAgePlanets2 = new AgePlanets(myDate2, 80);
+
+  it ('will return earth years left for 1936 person', function(){
+    expect(myAgePlanets2.getYearsLeftOnPlanet(getPlanetsYears()[2])).toEqual(-4);
+  });
+
+  it ('will return earth years left for 1996 mars person', function(){
+    expect(myAgePlanets.getYearsLeftOnPlanet(getPlanetsYears()[3])).toEqual(30);
+  });
+
 
 });

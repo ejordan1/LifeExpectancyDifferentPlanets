@@ -9,6 +9,10 @@ let myAgePlanets = new AgePlanets(myDate, 80);
 
 console.log(myAgePlanets.getExactYearsAlive());
 console.log(myAgePlanets.getYearsOnPlanet(getPlanetsYears()[0]));
+console.log(myAgePlanets.getYearsOnPlanet(getPlanetsYears()[1]));
+console.log(myAgePlanets.getYearsOnPlanet(getPlanetsYears()[2]));
+console.log(myAgePlanets.getYearsOnPlanet(getPlanetsYears()[3]));
+console.log(myAgePlanets.getYearsOnPlanet(getPlanetsYears()[4]));
 //
 // console.log((Date.now() - userDOB) / (1000 * 3600 * 24 * 365.2422));
 // console.log((Date.now() - userDOB1) / (1000 * 3600 * 24 * 365.2422));
@@ -18,8 +22,7 @@ console.log(myAgePlanets.getYearsOnPlanet(getPlanetsYears()[0]));
 // console.log (parseInt(23.155244475161503 / .62));
 // console.log (parseInt(23.155244475161503 / 1.88));
 // console.log (parseInt(23.155244475161503 / 11.86));
-debugger;
-console.log(myAgePlanets.getYearsLeftOnPlanet(1));
+console.log("years left mars: " + myAgePlanets.getYearsLeftOnPlanet(planetYears[3]));
 
 export function getPlanetsYears(){
   return planetYears;
