@@ -4,36 +4,61 @@
   <title>Einstein's Riddle</title>
 </head>
 <body>
-    <div class="bod">
-  <div id = "titleRiddle">Einstein's Riddle:</div>
+  <div class="bod">
+    <div id = "titleRiddle">Einstein's Riddle:</div>
 
-  <div class="form">
-    <form class="ageForm" action="index.html" method="post">
-      <div class="notMatter">
-      (these things don't actually matter for the riddle because its all <em>relative</em> anyway)
-      </div>
-      <label for="ageInput">Enter Your Date of Birth:</label>
-      <input id = "ageInput" type="date" size = "10" name="" value="">
-      <br>
-      <label for="lifeInput">Enter Your Life Expectancy:</label>
-      <input id = "lifeInput" type="text" size = "5" name="" value="">
-      <br>
-      <button type="submit" name="button">Submit</button>
-    </form>
-
-  </div>
-    <div class="mercury:">
-
+    <div class="form">
+      <form class="ageForm" action="index.html" method="post">
+        <div class="notMatter">
+          (these things don't actually matter for the riddle because its all <em>relative</em> anyway)
+        </div>
+        Enter Your Date of Birth!
+        <br>
+        <br>
+        <br>
+        <label for="ageInputMonth">Month:</label>
+        <input id = "ageInputMonth" type="text" size = "10" name="" value="" required>
+        <label for="ageInputDay">Day:</label>
+        <input id = "ageInputDay" type="text" size = "10" name="" value="" required>
+        <label for="ageInputYear">Year:</label>
+        <input id = "ageInputYear" type="text" size = "10" name="" value="" required>
+        <br>
+        <label for="lifeInput">Enter Your Life Expectancy:</label>
+        <input id = "lifeInput" type="text" size = "5" name="" value="" required>
+        <br>
+        <button type="submit" name="button">Submit</button>
+      </form>
     </div>
+    <div class="guessFormSection">
+      <form class="guessForm" action="index.html" method="post">
+        <label for="inputGuess">Write Your Guess Here!</label>
+        <input id = "inputGuess" type="text" name="" value="">
+        <button type="submit" name="button">Submit</button>
+      </form>
 
+      <div class="correct">
+        Correct! On Mercury you would last the longest!
+      </div>
+      <div class="butWhy">
+        ... <a href="https://en.wikipedia.org/wiki/Time_dilation">but y?</a>
+      </div>
+      <div class="incorrect">
+        Nope!
+      </div>
+      <div class="planetInfo">
+        yearsLeft:
+      </div>
+    </div>
   </div>
-  <div class="assuming">
-    (Assuming these planets had the same living conditions as Earth)
-  </div>
-    <h1>On which of these planets would you live the longest?</h1>
+  <div class="bottomSection">
+    <div class="assuming">
+      (Assuming these planets had the same living conditions as Earth)
+    </div>
+    <h1>On which of these planets would you last the longest?</h1>
     <h2>Click each planet to find out how many more years you would live!</h2>
     <div class="ifYouLived">
       (If you lived exactly your life expectancy)
     </div>
+  </div>
 </body>
 </html>

@@ -48,7 +48,17 @@ h2{
   color: lightgrey;
 }
 
+.guessFormSection{
+  color: lightgrey;
+}
+
 .notMatter{
   padding: 5px;
   color: #1c1c1c;
+}
+
+.planetInfo{
+   position: absolute;
+   z-index: 3;
+   color: white;
 }
