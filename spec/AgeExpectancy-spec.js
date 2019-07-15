@@ -1,15 +1,3 @@
-// import { syllablesInWord} from './../src/haikuChecker-code';
-//
-//
-// describe ('SyllableTest', function(){
-//
-//    it('return syllables in a word 11', function(){
-//      expect(syllablesInWord("shoe")).toEqual(1);
-//    });
-//
-//
-// });
-
 let myDate = new Date(1996, 4, 2);
 let myAgePlanets = new AgePlanets(myDate, 80);
 
@@ -19,7 +7,7 @@ import {getPlanetsYears} from './../src/main';
 describe ('Age for planets', function(){
 
   it ('will return years alive mercury', function(){
-    // console.log(myAgePlanets.getYearsOnPlanet(getPlanetsYears()[0]));
+
     expect(myAgePlanets.getYearsOnPlanet(getPlanetsYears()[0])).toEqual(96);
   });
   it ('will return years alive venus', function(){

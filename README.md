@@ -1,4 +1,4 @@
-# Bagheera's Pizzeria
+# Einstein's Riddle
 
 #### _Determines Age and things for Different planets - June 28, 2019_
 
