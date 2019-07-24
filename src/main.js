@@ -8,9 +8,8 @@ let userDOB = new Date ('May 2, 1996 03:24:00');
 let userDOB1 = new Date (1996, 4, 2);
 
 let planetYears = [.24, .62, 1, 1.88, 11.86, 29.457, 84.0205, 164.8];
-let myDate = new Date(1996, 4, 2);
 
-let myAgePlanets;
+let newAgePlanets;
 let imageWidth = 910;
 let planetPos = 300;
 let planetDimensions = [];
@@ -48,10 +47,10 @@ $(function(){
   $(".guessForm").hide();
   $(".butWhy").hide();
 planetInfoQuery = document.querySelector(".planetInfo");
-planetInfoQuery.style.top = "400px";
-  $("body").click(function(event){
-    clicked(event);
-  });
+//planetInfoQuery.style.top = "400px";
+ $("body").click(function(event){
+   clicked(event);
+ });
   $(".ageForm").submit(function(event){
     event.preventDefault();
     let ageInputMonth = $("#ageInputMonth").val();
@@ -60,7 +59,7 @@ planetInfoQuery.style.top = "400px";
     let userDate = new Date(ageInputYear, ageInputMonth, ageInputDay);
     let lifeExpectancy = $("#lifeInput").val();
 
-    myAgePlanets = new AgePlanets(userDate, lifeExpectancy);
+    newAgePlanets = new AgePlanets(userDate, lifeExpectancy);
     $(".form").hide();
     filledOutForm = true;
     $(".bottomSection").fadeIn();
@@ -104,7 +103,7 @@ function clicked(event){
       $(".planetInfo").fadeIn();
       planetInfoQuery.style.left = x - 40 + "px";
 
-      $(".planetInfo").text("Years left: " + myAgePlanets.getYearsLeftOnPlanet(planetYears[i]));
+      $(".planetInfo").text("Years left: " + newAgePlanets.getYearsLeftOnPlanet(planetYears[i]));
     }
   }
 }
